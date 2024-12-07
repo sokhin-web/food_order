@@ -10,10 +10,10 @@ function Navbar({ setCategory }) {
   };
 
   return (
-    <div className="mt-[50px]">
-      <div className="text-white text-xl font-serif flex flex-row justify-center items-center gap-10">
+    <div className="mt-[50px] phone:mt-[20px] animate-slide_right_center">
+      <div className="text-white text-xl font-serif flex flex-row justify-center flex-wrap items-center gap-10 phone:gap-2 phone:text-sm  phone:justify-start ">
         <p
-          className={`cursor-pointer py-1 px-5 rounded-sm  ${
+          className={`cursor-pointer py-1 px-5 rounded-sm phone:px-2 ${
             activeCategory === "All"
               ? "bg-gray-100 text-teal-600 "
               : "bg-teal-500 hover:bg-gray-100 hover:text-teal-600 "
@@ -23,7 +23,7 @@ function Navbar({ setCategory }) {
           All Food
         </p>
         <p
-          className={`cursor-pointer py-1 px-5 rounded-sm  ${
+          className={`cursor-pointer py-1 px-5 rounded-sm  phone:px-2 ${
             activeCategory === "Pizza"
               ? "bg-gray-100 text-teal-600 "
               : "bg-teal-500 hover:bg-gray-100 hover:text-teal-600 "
@@ -33,7 +33,7 @@ function Navbar({ setCategory }) {
           Pizza
         </p>
         <p
-          className={`cursor-pointer py-1 px-5 rounded-sm  ${
+          className={`cursor-pointer py-1 px-5 rounded-sm  phone:px-2 ${
             activeCategory === "Salad"
               ? "bg-gray-100 text-teal-600 "
               : "bg-teal-500 hover:bg-gray-100 hover:text-teal-600 "
@@ -43,7 +43,7 @@ function Navbar({ setCategory }) {
           Salad
         </p>
         <p
-          className={`cursor-pointer py-1 px-5 rounded-sm  ${
+          className={`cursor-pointer py-1 px-5 rounded-sm  phone:px-2 ${
             activeCategory === "Pasta"
               ? "bg-gray-100 text-teal-600 "
               : "bg-teal-500 hover:bg-gray-100 hover:text-teal-600 "
@@ -53,7 +53,7 @@ function Navbar({ setCategory }) {
           Spaghetti
         </p>
         <p
-          className={`cursor-pointer py-1 px-5 rounded-sm  ${
+          className={`cursor-pointer py-1 px-5 rounded-sm  phone:px-2 ${
             activeCategory === "Dessert"
               ? "bg-gray-100 text-teal-600 "
               : "bg-teal-500 hover:bg-gray-100 hover:text-teal-600 "
@@ -63,7 +63,7 @@ function Navbar({ setCategory }) {
           Dessert
         </p>
         <p
-          className={`cursor-pointer py-1 px-5 rounded-sm  ${
+          className={`cursor-pointer py-1 px-5 rounded-sm  phone:px-2 ${
             activeCategory === "Drink"
               ? "bg-gray-100 text-teal-600 "
               : "bg-teal-500 hover:bg-gray-100 hover:text-teal-600 "

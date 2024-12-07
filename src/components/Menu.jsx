@@ -220,7 +220,7 @@ function Menu({ addToOrder, category, colorBlack, borderGray }) {
   };
 
   return (
-    <div className="mt-10 flex flex-row  flex-wrap justify-center gap-5">
+    <div className="mt-10 flex flex-row  flex-wrap justify-center gap-5 animate-slide_left_center">
       {filterData().map((item) => (
         <Food_Card
           key={item.id}

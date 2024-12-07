@@ -42,14 +42,16 @@ function OrderList({
   // Function to capture a screenshot of the component
 
   return (
-    <div className={`px-2 py-2 rounded-md border ${borderGray} ${appBg}`}>
+    <div
+      className={`px-2 py-2 rounded-md border ${borderGray} ${appBg} animate-slide_right_center `}
+    >
       <div className="flex flex-row justify-between items-center px-2 py-1 bg-teal-500 text-white rounded-md cursor-pointer">
         <p>Current Order</p>
         <RiDeleteBin2Fill />
       </div>
       <div
         id="orderList"
-        className="w-[300px] min-h-[200px] overflow-y-scroll pb-5"
+        className="w-[300px] min-h-[200px] max-h-[60vh] overflow-y-auto pb-5"
       >
         {orderItems.map((item, index) => (
           <OrderList_Card
